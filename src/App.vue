@@ -1,8 +1,14 @@
 <template>
   <div id="app">
+    <h1> RedditAnimeList </h1>
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <b-navbar type="dark" variant="primary">
+        <b-navbar-nav>
+          <b-nav-item to="/">Anime</b-nav-item>
+          <b-nav-item to="/about">Characters</b-nav-item>
+          <b-nav-item href="#"> - </b-nav-item>
+        </b-navbar-nav>
+      </b-navbar>
     </div>
     <router-view/>
   </div>
@@ -13,12 +19,18 @@
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
-#nav {
-  padding: 30px;
+h1 {
+  font-family: 'Reggae One';
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.nav-item a.nav-link {
+    font-family: 'Reggae One';
 }
 
 #nav a {
@@ -27,6 +39,6 @@
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: white;
 }
 </style>
