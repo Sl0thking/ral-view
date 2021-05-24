@@ -6,6 +6,11 @@ Vue.use(VueRouter);
 
 const routes: Array<RouteConfig> = [
   {
+    path: '/animes',
+    name: 'Animes',
+    component: () => import('../views/AnimeList.vue'),
+  },
+  {
     path: '/',
     name: 'Home',
     component: Home,
